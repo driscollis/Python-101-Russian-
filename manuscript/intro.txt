@@ -1,54 +1,53 @@
-Introduction
+Введение
 ============
 
-Welcome to Python 101! I wrote this book to help you learn Python 3. It
-is not meant to be an exhaustive reference book. Instead, the object is
-to get you acquainted with the building blocks of Python so that you can
-actually write something useful yourself. A lot of programming textbooks
-only teach you the language, but do not go much beyond that. I will
-endeavour to not only get you up to speed on the basics, but also to
-show you how to create useful programs. Now you may be wondering why
-just learning the basics isn't enough. In my experience, when I get
-finished reading an introductory text, I want to then create something,
-but I don't know how! I've got the learning, but not the glue to get
-from point A to point B. I think it's important to not only teach you
-the basics, but also cover intermediate material.
+Добро пожаловать в Python 101! Я писал эту книгу, чтобы помочь вам изучить
+Python 3. Она не претендует на звание исчерпывающего справочного руководства.
+Вместо этого, объектом книги является ознакомить вас со строительными блоками
+Python настолько, чтобы вы могли написать что-то полезное для себя. Множество
+книг по программированию учат вас только языку, но не идут гораздо дальше. Я
+постараюсь не только помочь вам с основами, но также и показать, как создавать
+полезные программы. Сейчас вы можете быть удивлены, почему простого изучения
+основ не достаточно. По моему личному опыту, когда я заканчиваю читать введение,
+то хочу написать затем что-то, но я не знаю как! Я прошёл обучение, но не в
+состоянии пройти из пункта А в пункт Б. Думаю, важно не только обучить вас
+основам, но также коснуться и более продвинутого материала.
 
-Thus, this book will be split into five parts:
+Таким образом, эта книгу будет разделена на пять частей
 
-> -   Part one will cover Python's basics
-> -   Part two will be on a small subset of Python's Standard Library
-> -   Part three will be intermediate material
-> -   Part four will be a series of small tutorials
-> -   Part five will cover Python packaging and distribution
-
-|
-
-Let me spend a few moments explaining what each part has to offer. In
-part one, we will cover the following:
-
-> -   Python types (strings, lists, dicts, etc)
-> -   Conditional statements
-> -   Loops
-> -   List and dictionary comprehensions
-> -   Exception Handling
-> -   File I/O
-> -   Functions and Classes
+> -   Первая часть коснётся основ Python
+> -   Вторая часть будет посвящена небольшой части стандартного библиотеки Python
+> -   Третья часть будет включать материал среднего уровня сложности
+> -   Четвёртая часть будет состоять из последовательности небольших руководств
+> -   Пятая часть коснётся создания Python-пакетов и их распространения
 
 |
 
-Part two will talk about some of Python's standard library. The standard
-library is what comes pre-packaged with Python. It is made up of modules
-that you can import to get added functionality. For example, you can
-import the **math** module to gain some high level math functions. I
-will be cherry picking the modules I use the most as a day-to-day
-professional and explaining how they work. The reason I think this is a
-good idea is that they are common, every day modules that I think you
-will benefit knowing about at the beginning of your Python education.
-This section will also cover various ways to install 3rd party modules.
-Finally, I will cover how to create your own modules and packages and
-why you'd want to do that in the first place. Here are some of the
-modules we will be covering:
+Дайте мне потратить немного времени на объяснения, что каждая из частей из себя
+представляет. В первой части мы коснёмся следующего:
+
+> -   Python-типы (строки, списки, словари и т.д.)
+> -   Условные операторы
+> -   Циклы
+> -   Списковые и словарные включения
+> -   Обработка исключений
+> -   Файловый ввод-вывод
+> -   Функции и классы
+
+|
+
+Во второй части рассказывается о некоторых пакетах из стандартной
+библиотеки Python. Стандартная библиотека - это готовые модули, которые
+можно импортировать для получения дополнительной функциональности. Например,
+вы можете импортировать модуль **math** для получения некоторых высокоуровневых
+математических функций. Я буду брать модули, которые использую в повседневной
+работе, и рассказывать, как они работают. Это хорошая идея, на мой взгляд,
+потому, что эти модули являются общими, используются каждый день, поэтому
+вам будет полезно о них узнать в начале вашего обучения Python. Этот раздел
+также охватывает различные способы установки сторонних модулей. В итоге я
+расскажу, как создавать собственные модули и пакеты, и почему я хотел бы
+сделать это в первую очередь. Ниже представлены некоторые модули, которые
+мы рассмотрим:
 
 > -   csv
 > -   ConfigParser
@@ -62,26 +61,26 @@ modules we will be covering:
 
 |
 
-Part three will cover intermediate odds and ends. These are topics that
-are handy to know, but not necessarily required to be able to program in
-Python. The topics covered are:
+Третья часть затронет различные темы среднего уровня сложности. Существуют
+темы, которые хорошо бы знать, но необязательны, чтобы написать программу
+на Python. Они включают:
 
-> -   the Python debugger (pdb)
-> -   decorators
-> -   the lambda function
-> -   code profiling
-> -   a testing introduction
+> -   Python-отладчик (pdb)
+> -   декораторы
+> -   лямбда-функции
+> -   профилирование кода
+> -   введение в тестирование
 
 |
 
-Part four will be made up of small tutorials that will help you to learn
-how to use Python in a practical way. In this way, you will learn how to
-create Python programs that can actually do something useful! You can
-take the knowledge in these tutorials to create your own scripts. Ideas
-for further enhancements to these mini-applications will be provided at
-the end of each tutorial so you will have something that you can try out
-on your own. Here are a few of the 3rd party packages that we'll be
-covering:
+Четвёртая часть будет представлена в виде небольших руководств, которые
+помогут вам научиться использовать Python на практике. В этом разделе вы
+изучите, как создавать Python-программы, которые делают что-то полезное.
+Из этих материалов вы узнаете, как создавать собственные скрипты. Идеи по
+дальнейшему улучшению этих мини-приложений будут представлены в конце
+каждого руководства, так что у вас будет возможность сделать что-то
+собственноручно. Ниже представлены несколько сторонних пакетов, которые
+мы затронем:
 
 > -   pip and easy\_install
 > -   configobj
@@ -93,122 +92,119 @@ covering:
 
 |
 
-Part five is going to cover how to take your code and give it to your
-friends, family and the world! You will learn the following:
+В пятой части рассказывается, как поделиться вашим кодом с семьёй,
+друзьями и миром! Вы изучите следующее:
 
-> -   How to turn your reusable scripts into Python "eggs", "wheels" and
->     more
-> -   How to upload your creation to the Python Package Index (PyPI)
-> -   How to create binary executables so you can run your application
->     without Python
-> -   How to create an installer for your application
+> -   Как поместить ваши переиспользуемые скрипты в Python "eggs", " wheels" и т.д.
+> -   Как загрузить ваше творение в Python Package Index (PyPI)
+> -   Как создать бинарные исполняемые файлы для запуска вашего приложения без Python
+> -   Как создать инсталлятор для вашего приложения
 
 |
 
-The chapters and sections may not all be the same length. While every
-topic will be covered well, not every topic will require the same page
-count.
+Главы и разделы могут быть разными по длине. Чтобы каждая тема была
+хорошо раскрыта, может понадобиться не одно и то же количество страниц.
 
-A Brief History of Python
+Краткая история Python
 -------------------------
 
-I think it helps to know the background of the Python programming
-language. Python was created in the late
-[1980s](http://www.artima.com/intv/pythonP.html). Everyone agrees that
-its creator is Guido van Rossum when he wrote it as a successor to the
-ABC programming language that he was using. Guido named the language
-after one of his favorite comedy acts: Monty Python. The language wasn't
-released until 1991 and it has grown a lot in terms of the number of
-included modules and packages included. At the time of this writing,
-there are two major versions of Python: the 2.x series and the 3.x
-(sometimes known as Python 3000) . The 3.x series is not backwards
-compatible with 2.x because the idea when creating 3.x was to get rid of
-some of the idiosyncrasies in the original. The current versions are
-2.7.12 and 3.5.2. Most of the features in 3.x have been backported to
-2.x; however, 3.x is getting the majority of Python's current
-development, so it is the version of the future.
+Я думаю, это поможет узнать предпосылки для языка программирования Python.
+Python был создан в конце [80-х](http://www.artima.com/intv/pythonP.html).
+Каждый согласится, что его создателем является Гвидо Ван Россум, написавший
+его как преемника языка программирования ABC, который он в тот момент
+использовал. Гвидо назвал язык в честь одного из своих любимых шоу: Monty
+Python. Язык не был представлен до 1991 года и он значительно вырос с точки
+зрения количества включенных модулей и пакетов. В момент написания этой книги
+существует 2 основные версии Python: ветка 2.x и 3.x (иногда известна как
+Python 3000).  3.x не имеет обратной совместимости с 2.x, потому что в момент
+создания 3.x идея заключалась в избавлении от некоторых особенностей
+предыдущей версии. Текущие версии - 2.7.12 и 3.5.2. Большинство функций 3.x
+добавлены в 2.x, однако основная часть разработки ведётся для ветки 3.x,
+соответственно это версия будущего Python.
 
-Some people think Python is just for writing little scripts to glue
-together "real" code, like C++ or Haskell. However you will find Python
-to be useful in almost any situation. Python is used by lots of big name
-companies such as Google, NASA, LinkedIn, Industrial Light & Magic, and
-many others. Python is used not only on the backend, but also on the
-front. In case you're new to the computer science field, backend
-programming is the stuff that's behind the scenes; things like database
-processing, document generation, etc. Frontend processing is the pretty
-stuff most users are familiar with, such as web pages or desktop user
-interfaces. For example, there are some really nice Python GUI toolkits
-such as wxPython, PySide, and Kivy. There are also several web
-frameworks like Django, Pyramid, and Flask. You might find it surprising
-to know that Django is used for Instagram and Pinterest. If you have
-used these or many other websites, then you have used something that's
-powered by Python without even realizing it!
+Некоторые люди полагают, что Python используется исключительно для
+связывания "реального" кода, написанного, к примеру, на C++ или Haskell.
+Однако вы обнаружите, что Python полезен в практически любой ситуации.
+Python активно используется такими крупными компаниями, как  Google, NASA,
+LinkedIn, Industrial Light & Magic и многими другими. Python используется
+не только на бэкенде, но также и на фронтенде. Если вы - новичок в сфере
+компьютерных наук, бэкенд - это то, что происходит за сценой: например,
+работа с базой данных, генерация документов и т.д. Работа с фронтендом
+знакома большинству пользователей, т.к. сюда относятся веб-страницы или
+настольный пользовательский интерфейс. Например, существуют действительно
+хорошие наборы инструментов для создания GUI на Python:  wxPython, PySide
+и Kivy. Существует также несколько веб-фреймворков вроде Django, Pyramid
+и Flask. Для вас может быть сюрпризом, но Django используется для Instagram
+и Pinterest. Если вы используете эти или многие другие сайты, тогда вы
+используете что-то, что написано на Python!
 
-About the Author
+Об авторе
 ----------------
 
-You may be wondering about who I am and why I might be knowledgeable
-enough about Python to write about it, so I thought I'd give you a
-little information about myself. I started programming in Python in the
-Spring of 2006 for a job. My first assignment was to port Windows login
-scripts from Kixtart to Python. My second project was to port VBA code
-(basically a GUI on top of Microsoft Office products) to Python, which
-is how I first got started in wxPython. I've been using Python ever
-since, doing a variation of backend programming and desktop front end
-user interfaces.
+Вы можете быть удивлены относительно того, кто я такой и почему я могу
+быть осведомлённым о Python настолько, чтобы писать о нём, поэтому, я думаю,
+дам вам немного информации о себе. Я начал программировать на Python осенью
+2006 года на работе. Моей первой задачей было портировать скрипты для
+авторизации с Kixtart на Python на Windows. Моим вторым проектом было
+портирование VBA-кода (по существу GUI на основе продуктов Microsoft Office)
+на Python, с которого началось моё знакомство с wxPython. С тех пор я
+постоянно использую Python, занимаясь программированием бекенда и настольных
+пользовательских интерфейсов.
 
-I realized that one way for me to remember how to do certain things in
-Python was to write about them and that's how my Python blog came about:
-<http://www.blog.pythonlibrary.org/>. As I wrote, I would receive
-feedback from my readers and I ended up expanding the blog to include
-tips, tutorials, Python news, and Python book reviews. I work regularly
-with Packt Publishing as a technical reviewer, which means that I get to
-try to check for errors in the books before they're published. I also
-have written for the Developer Zone (DZone) and i-programmer websites as
-well as the Python Software Foundation. In November 2013, DZone
-published **The Essential Core Python Cheat Sheet** that I co-authored.
+Я осознал, что единственным способом для меня запомнить, как выполнять
+основные задачи на Python, было написать о них, так появился мой
+Python-блог: <http://www.blog.pythonlibrary.org/>. Я писал, что получал
+отзывы от моих читателей и позднее расширил блог, добавив подсказки,
+руководства, новости мира Python и отзывы на книги, связанные с этим
+языком программирования. Я постоянно работаю с Packt Publishing в качестве
+технического рецензента, т.е. пытаюсь отыскать ошибки в книгах до того, как
+они будут опубликованы. Я также создал веб-сайты Developer Zone (DZone) и
+i-programmer, а также Python Software Foundation. В ноябре 2013 DZone
+опубликовал документ **The Essential Core Python Cheat Sheet**, соавтором
+которого я являюсь.
 
-Conventions
+Соглашения
 -----------
 
-As with most technical books, this one includes a few conventions that
-you need to be aware of. New topics and terminology will be in **bold**.
-You will also see some examples that look like the following:
+Как и в большинстве технических книг, эта содержит несколько соглашений,
+о которых вам следует знать. Новые темы и терминология будут выделены
+**жирным**. Вы также увидите некоторые примеры, которые выглядят
+следующим образом:
 
 ``` {.sourceCode .python}
->>> myString = "Welcome to Python!"
+>>> myString = "Доброе пожаловать в Python!"
 ```
 
-The **&gt;&gt;&gt;** is a Python prompt symbol. You will see this in the
-Python **interpreter** and in **IDLE**. You will learn more about each
-of these in the first chapter. Other code examples will be shown in a
-similar manner, but without the **&gt;&gt;&gt;**.
+**&gt;&gt;&gt;** - это символ ввода Python-консоли. Вы увидите его в **IDLE**
+и при включении **интерпретатора**. Вы изучите больше о каждом из этих случаев
+в первой главе. Другие примеры кода будут показаны подобным образом, но без
+**&gt;&gt;&gt;**.
 
-Requirements
+Требования
 ------------
 
-You will need a working Python 3 installation. The examples should work
-in either Python 2.x or 3.x unless specifically marked otherwise. Most
-Linux and Mac machines come with Python already installed. However, if
-you happen to find yourself without Python, you can go download a copy
-from [<http://python.org/download/>](http://python.org/download/). There
-are up-to-date installation instructions on their website, so I won't
-include any installation instructions in this book. Any additional
-requirements will be explained later on in the book.
+Вам понадобится установленный Python 3. Примеры должны работать и в ветке 2.х,
+и в 3.х, если специально не указано обратное. Большинство машин на Linux или
+Mac уже имеют предустановленный Python, однако, если вы все-таки не обнаружите
+его у себя, можно скачать копию с [<http://python.org/download/>](http://python.org/download/).
+На сайте есть новейшие инструкции по установке, так что я не буду включать
+любые подобные руководства в эту книгу. Любые дополнительные требования будут объяснены
+по ходу чтения книги.
 
-Reader Feedback
+Обратная связь с читателями
 ---------------
 
-I welcome feedback about my writings. If you'd like to let me know what
-you thought of the book, you can send comments to the following address:
+Я приветствую любую обратную связь о моих работах. Если вы хотите дать мне
+знать, что вы думаете об этой книге, то можете отправить комментарии по
+следующему адресу:
 
 <comments@pythonlibrary.org>
 
-Errata
+Исправление опечаток
 ------
 
-I try my best not to publish errors in my writings, but it happens from
-time to time. If you happen to see an error in this book, feel free to
-let me know by emailing me at the following:
+Я стараюсь не допускать опечаток в своих работах, однако они случаются время
+от времени. Если вы заметите опечатку в этой книге, дайте мне знать об этом в
+своё свободное время, написав по следующему адресу электронной почты:
 
 <errata@pythonlibrary.org>
