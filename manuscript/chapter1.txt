@@ -1,89 +1,88 @@
-# Chapter 1 - IDLE Programming
+# Глава 1 - Программирование в IDLE
 
-Using IDLE
+Использование IDLE
 ----------
 
-Python comes with its own code editor: **IDLE** (Integreted Development
-and Learning Environment). There is some lore that the name for IDLE
-comes from Eric Idle, an actor in *Monty Python*. An IDE is an editor
-for programmers that provides color highlighting of key words in the
-language, auto-complete, an "experimental" debugger and lots of other
-fun things. You can find an IDE for most popular languages and a number
-of IDEs will work with multiple languages. IDLE is kind of a lite IDE,
-but it does have all those items mentioned. It allows the programmer to
-write Python and debug their code quite easily. The reason I call it
-"lite" is the debugger is very basic and it's missing other features
-that programmers who have a background using products like *Visual
-Studio* will miss. You might also like to know that IDLE was created
-using Tkinter, a Python GUI toolkit that comes with Python.
+Python поставляется с собственным редактором кода - **IDLE** (интегрированная
+среда для разработки и обучения). Существует версия, что название для IDLE
+пришло  от Eric IDLE, актёра в *Monty Python*. IDE - это редактор для
+программистов, который предоставляет цветную подсветку ключевых слов языка,
+автодополнение, "экспериментальный" отладчик и множество других хороших вещей.
+Вы можете найти IDE для большинства популярных языков, а некоторые
+представители будут работать с несколькими языками. IDLE относится к разряду
+облегчённых IDE, однако обладает всеми вышеуказанными опциями. Это позволяет
+легко писать и отлаживать код на Python. Причины, по которым я назвал данный
+редактор "облегченным", заключаются в очень простом отладчике и отсутствии
+других функций, которыми пользуются другие программисты, имеющие опыт
+использования продуктов вроде Visual Studio. Вам также может быть интересно
+узнать, что IDLE был создан с использованием Tkinter, Python GUI
+инструментария, который поставляется вместе с Python.
 
-To open up IDLE, you will need to find it and you'll see something like
-this:
+Чтобы открыть IDLE, вам необходимо найти его и увидеть примерно следующее:
 
 ![image](images/idle_main.jpg)
 
-Yes, it's a Python shell where you can type short scripts and see their
-output immediately and even interact with code in real time. There is no
-compiling of the code as Python is an interpretive language and runs in
-the Python interpreter. Let's write your first program now. Type the
-following after the command prompt (&gt;&gt;&gt;) in IDLE:
+Да, это Python-консоль, где вы можете вводить короткие скрипты и видеть
+их результат немедленно, и даже взаимодействовать с кодом в реальном времени.
+Компилирование кода отсутствует, так как Python - интерпретируемый язык,
+который выполняется интерпретатором. Давайте сейчас напишем вашу первую
+программу. Введлите после команды ввода (&gt;&gt;&gt;) в IDLE следующее:
 
 ``` {.sourceCode .python}
-print("Hello from Python!")
+print("Привет из Python!")
 ```
 
-You have just written your first program! All your program does is write
-a string to the screen, but you'll find that very helpful later on.
-Please note that the **print** statement has changed in Python 3.x. In
-Python 2.x, you would have written the above like this:
+Сейчас вы написали вашу первую программу. Все, что она делает, - пишет
+строку на экране, но позже вы поймёте, насколько полезной она окажется.
+Обратите внимание, что утверждение print изменено в Python 3.x. В Python
+2.x вы бы написали код выше следующим образом:
 
 ``` {.sourceCode .python}
-print "Hello from Python!"
+print "Привет из Python!"
 ```
 
-In Python 3, the **print** statement was turned into a **print
-function**, which is why parentheses are required. You will learn what
-functions are in chapter 10.
+В Python 3 оператор **print** преобразовано в **функцию**, поэтому требуются
+круглые скобки. Мы изучим функции в главе 10.
 
-If you want to save your code into a file, go to the File menu and
-choose New Window (or press CTRL+N). Now you can type in your program
-and save it here. The primary benefit of using the Python shell is that
-you can experiment with small snippets to see how your code will behave
-before you put the code into a real program. The code editor screen
-looks a little different than the IDLE screenshot above:
+Если вы хотите сохранить ваш код в файл, перейдите в меню File и выберите
+New Window (или нажмите CTRL+N). Теперь вы можете ввести вашу программу и
+сохранить её здесь. Основное преимущество от использования оболочки с
+интерпретатором Python в том, что можно экспериментировать с небольшими
+фрагментами, чтобы увидеть поведение кода перед добавлением в реальную
+программу. Экран редактора кода немного отличается от скриншота IDLE выше:
 
 ![image](images/idle_editor.jpg)
 
-Now we'll spend a little time looking at IDLE's other useful features.
+Теперь потратим немного времени на обзор других полезных функций IDLE.
 
-Python comes with lots of modules and packages that you can import to
-add new features. For example, you can import the **math** module for
-all kinds of good math functions, like square roots, cosines, etcetera.
-In the **File** menu, you'll find a **Path Browser** which is useful for
-figuring out where Python looks for module imports. You see, Python
-first looks in the same directory as the script that is running to see
-if the file it needs to import is there. Then it checks a predefined
-list of other locations. You can actually add and remove locations as
-well. The Path Browser will show you where these files are located on
-your hard drive, if you have imported anything. My Path Browser looks
-like this:
+Python поставляется со множеством модулей и пакетов, которые вы можете
+импортировать, чтобы добавить новый функционал. Например, вы можете
+импортировать модуль **math** со всеми видами полезных математических функций
+вроде квадратных корней, косинусов и т.д. В меню **File** вы найдёте пункт
+**Path Browser**, который полезен для определения того, где Python будет
+искать импортированные модули. Видите, сразу Python ищет в том же каталоге,
+где находится запущенный скрипт, чтобы увидеть, не находится ли здесь нужный
+для импорта файл. Затем он проверяет предопределённый список других мест. Вы
+также можете добавлять или удалять записи из этого списка. Path Browser
+покажет вам, где эти файлы расположены на вашем жёстком диске, если вы
+импортировали что-нибудь. Мой Path Browser выглядит следующим образом:
 
 ![image](images/path_browser.jpg)
 
-Next there's a **Class Browser** that will help you navigate your code.
-Frankly it would make more sense if this menu option was called "Module
-Browser" as that is much closer to what you'll actually be doing. This
-is actually something that won't be very useful to you right now, but
-will be in the future. You'll find it helpful when you have lots of
-lines of code in a single file as it will give you a "tree-like"
-interface for your code. Note that you won't be able to load the Class
-Browser unless you have actually saved your program.
+Далее находится  **Class Browser**, который поможет вам перемещаться по
+коду. Откровенно говоря, имело бы больший смысл назвать эту опцию меню
+"Module Browser", что лучше отражает действие, которое вы будете делать.
+В действительности это не будет вам очень полезным прямо сейчас, однако в
+будущем это изменится. Когда в одном файле будет много строк кода, эта опция
+предоставит "древовидный" интерфейс для вашего кода. Обратите внимание, что
+вы не сможете загрузить Class Browser до тех пор, пока не сохраните вашу
+программу.
 
-The **Edit** menu has your typical features, such as Copy, Cut, Paste,
-Undo, Redo and Select All. It also contains various ways to search your
-code and do a search and replace. Finally, the Edit menu has some menu
-items that will show you various things, such as highlighting
-parentheses or displaying the auto-complete list.
+Меню **Edit** включает традиционные команды вроде Скопировать, Вырезать,
+Вставить, Вперёд, Назад и Выбрать Всё. Также предоставляются различные
+варианты поиска вашего кода и его замены. В конце концов, меню Edit включает
+некоторые пункты, которые покажут вам различные вспомогательные вещи, такие
+как подсветка круглых скобок или списка автозаполнения.
 
 The **Format** menu has lots of useful functionality. It has some
 helpful items for **indenting** and **dedenting** your code, as well as
